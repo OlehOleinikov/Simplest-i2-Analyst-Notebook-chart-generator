@@ -1,0 +1,166 @@
+<?xml version="1.0" ?>
+<Chart BackColour="16777215" BlankLinkLabels="true" DefaultDate="2022-01-01T00:00:00.000" DefaultTickRate="1" GridHeightSize="0.295275590551181" GridVisibleOnAllViews="true" GridWidthSize="0.295275590551181" HideMatchingTimeZoneFormat="false" ShowAllFlag="false" ShowPages="false" SnapToGrid="false" Rigorous="true" IdReferenceLinking="false" LabelRule="LabelRuleMerge" LabelSumNumericLinks="false" UseLocalTimeZone="true" UseWiringHeightForThemeIcon="true" WiringDistanceFar="0.393700787401575" WiringDistanceNear="0.078740157480315" WiringHeight="0.196850393700787" WiringSpacing="0.196850393700787" TimeBarVisible="false">
+   <!--Simple Python to IBM i2 ANB converter (by @matematik_777)-->
+   <StrengthCollection>
+      <Strength DotStyle="DotStyleDashed" Id="Dashed" Name="Unconfirmed"/>
+      <Strength DotStyle="DotStyleSolid" Id="Solid" Name="Confirmed"/>
+      <Strength DotStyle="DotStyleDotted" Id="Tentative" Name="Tentative"/>
+   </StrengthCollection>
+   <EntityTypeCollection>
+      <EntityType Name="PersonFirst" Colour="0" IconFile="Prisoff" PreferredRepresentation="RepresentAsIcon"/>
+      <EntityType Name="PersonSecond" Colour="0" IconFile="Prisoff US" PreferredRepresentation="RepresentAsIcon"/>
+      <EntityType Name="PersonOther" Colour="0" IconFile="Person (Faceless)" PreferredRepresentation="RepresentAsIcon"/>
+      <EntityType Name="Car" Colour="0" IconFile="Car" PreferredRepresentation="RepresentAsIcon"/>
+      <EntityType Name="Plate" Colour="0" IconFile="Motor vehicle" PreferredRepresentation="RepresentAsIcon"/>
+      <EntityType Name="Van" Colour="0" IconFile="Van" PreferredRepresentation="RepresentAsIcon"/>
+      <EntityType Name="Bus" Colour="0" IconFile="Minibus" PreferredRepresentation="RepresentAsIcon"/>
+      <EntityType Name="Train" Colour="0" IconFile="Train" PreferredRepresentation="RepresentAsIcon"/>
+      <EntityType Name="Plane" Colour="0" IconFile="Terminal" PreferredRepresentation="RepresentAsIcon"/>
+      <EntityType Name="CheckPoint" Colour="0" IconFile="Place" PreferredRepresentation="RepresentAsIcon"/>
+      <EntityType Name="Person" Colour="0" IconFile="Person" PreferredRepresentation="RepresentAsIcon"/>
+   </EntityTypeCollection>
+   <LinkTypeCollection>
+      <LinkType Name="Link" Colour="0"/>
+      <LinkType Name="Fly" Colour="255"/>
+      <LinkType Name="Car" Colour="16711680"/>
+      <LinkType Name="Walk" Colour="32768"/>
+      <LinkType Name="Use" Colour="8388736"/>
+   </LinkTypeCollection>
+   <ChartItemCollection>
+      <ChartItem DateSet="false" GradeOneIndex="0" Description="It is description... It can be long string with wrapping. Label is hidden in this case." GradeTwoIndex="0" Selected="false" GradeThreeIndex="0" TimeSet="false" Ordered="false" Label="Custom label..." Shown="true" XPosition="684">
+         <End Y="332" X="684" Z="0">
+            <Entity EntityId="1" Identity="First entity identity" LabelIsIdentity="true">
+               <Icon TextX="0" TextY="20">
+                  <IconStyle Enlargement="ICEnlargeSingle" Type="PersonFirst"/>
+               </Icon>
+            </Entity>
+         </End>
+         <CIStyle Background="false" DateTimeFormat="Default" ShowDateTimeDescription="false" UseSubTextWidth="true" SubTextWidth="1.968503937007874">
+            <Font BackColour="16777215" FontColour="0" CharSet="CharSetANSI" FaceName="Tahoma" PointSize="11" Bold="false" Italic="false" Underline="false" Strikeout="false"/>
+            <SubItemCollection>
+               <SubItem Type="SubItemDescription" Visible="true"/>
+               <SubItem Type="SubItemGrades" Visible="false"/>
+               <SubItem Type="SubItemLabel" Visible="false"/>
+               <SubItem Type="SubItemPin" Visible="false"/>
+               <SubItem Type="SubItemSourceReference" Visible="false"/>
+               <SubItem Type="SubItemSourceType" Visible="false"/>
+               <SubItem Type="SubItemDateTime" Visible="false"/>
+            </SubItemCollection>
+         </CIStyle>
+      </ChartItem>
+      <ChartItem DateSet="false" GradeOneIndex="0" Description="my description" GradeTwoIndex="0" Selected="false" GradeThreeIndex="0" TimeSet="false" Ordered="false" Label="Custom label again" Shown="true" XPosition="680">
+         <End Y="184" X="680" Z="0">
+            <Entity EntityId="2" Identity="Identity for second entity (without wrapping)" LabelIsIdentity="true">
+               <Icon TextX="0" TextY="20">
+                  <IconStyle Enlargement="ICEnlargeDouble" Type="Train"/>
+               </Icon>
+            </Entity>
+         </End>
+         <CIStyle Background="false" DateTimeFormat="Default" ShowDateTimeDescription="false" UseSubTextWidth="true" SubTextWidth="1.968503937007874">
+            <Font BackColour="16777215" FontColour="0" CharSet="CharSetANSI" FaceName="Tahoma" PointSize="11" Bold="false" Italic="false" Underline="false" Strikeout="false"/>
+            <SubItemCollection>
+               <SubItem Type="SubItemDescription" Visible="false"/>
+               <SubItem Type="SubItemGrades" Visible="false"/>
+               <SubItem Type="SubItemLabel" Visible="true"/>
+               <SubItem Type="SubItemPin" Visible="false"/>
+               <SubItem Type="SubItemSourceReference" Visible="false"/>
+               <SubItem Type="SubItemSourceType" Visible="false"/>
+               <SubItem Type="SubItemDateTime" Visible="false"/>
+            </SubItemCollection>
+         </CIStyle>
+      </ChartItem>
+      <ChartItem DateSet="false" GradeOneIndex="0" Description="Regular person" GradeTwoIndex="0" Selected="false" GradeThreeIndex="0" TimeSet="false" Ordered="false" Label="" Shown="true" XPosition="78">
+         <End Y="388" X="78" Z="0">
+            <Entity EntityId="3" Identity="Some another ID" LabelIsIdentity="true">
+               <Icon TextX="0" TextY="20">
+                  <IconStyle Enlargement="ICEnlargeSingle" Type="Person"/>
+               </Icon>
+            </Entity>
+         </End>
+         <CIStyle Background="false" DateTimeFormat="Default" ShowDateTimeDescription="false" UseSubTextWidth="true" SubTextWidth="1.968503937007874">
+            <Font BackColour="16777215" FontColour="0" CharSet="CharSetANSI" FaceName="Tahoma" PointSize="11" Bold="false" Italic="false" Underline="false" Strikeout="false"/>
+            <SubItemCollection>
+               <SubItem Type="SubItemDescription" Visible="true"/>
+               <SubItem Type="SubItemGrades" Visible="false"/>
+               <SubItem Type="SubItemLabel" Visible="false"/>
+               <SubItem Type="SubItemPin" Visible="false"/>
+               <SubItem Type="SubItemSourceReference" Visible="false"/>
+               <SubItem Type="SubItemSourceType" Visible="false"/>
+               <SubItem Type="SubItemDateTime" Visible="false"/>
+            </SubItemCollection>
+         </CIStyle>
+      </ChartItem>
+      <ChartItem DateSet="false" GradeOneIndex="0" Description="Another long text subitem description... With font parameters" GradeTwoIndex="0" Selected="false" GradeThreeIndex="0" TimeSet="false" Ordered="false" Label="" Shown="true" XPosition="585">
+         <End Y="478" X="585" Z="0">
+            <Entity EntityId="4" Identity="ID283" LabelIsIdentity="true">
+               <Icon TextX="0" TextY="20">
+                  <IconStyle Enlargement="ICEnlargeSingle" Type="Plane"/>
+               </Icon>
+            </Entity>
+         </End>
+         <CIStyle Background="false" DateTimeFormat="Default" ShowDateTimeDescription="false" UseSubTextWidth="true" SubTextWidth="1.968503937007874">
+            <Font BackColour="16777215" FontColour="0" CharSet="CharSetANSI" FaceName="Tahoma" PointSize="18" Bold="true" Italic="false" Underline="false" Strikeout="false"/>
+            <SubItemCollection>
+               <SubItem Type="SubItemDescription" Visible="true"/>
+               <SubItem Type="SubItemGrades" Visible="false"/>
+               <SubItem Type="SubItemLabel" Visible="false"/>
+               <SubItem Type="SubItemPin" Visible="false"/>
+               <SubItem Type="SubItemSourceReference" Visible="false"/>
+               <SubItem Type="SubItemSourceType" Visible="false"/>
+               <SubItem Type="SubItemDateTime" Visible="false"/>
+            </SubItemCollection>
+         </CIStyle>
+      </ChartItem>
+      <ChartItem DateSet="false" GradeOneIndex="0" Description="This is a description with wrapping " GradeTwoIndex="0" Selected="false" GradeThreeIndex="0" TimeSet="false" Ordered="false" Label="This is a link label" Shown="true" XPosition="0">
+         <Link End1Id="1" End2Id="2" LabelPos="50" LabelSegment="0" Offset="0">
+            <LinkStyle ArrowStyle="ArrowOnBoth" LineWidth="1" Strength="Unconfirmed" Type="Link"/>
+         </Link>
+         <CIStyle Background="false" DateTimeFormat="Default" ShowDateTimeDescription="false" UseSubTextWidth="true" SubTextWidth="1.968503937007874">
+            <Font BackColour="16777215" FontColour="0" CharSet="CharSetANSI" FaceName="Tahoma" PointSize="11" Bold="false" Italic="false" Underline="false" Strikeout="false"/>
+            <SubItemCollection>
+               <SubItem Type="SubItemDescription" Visible="false"/>
+               <SubItem Type="SubItemGrades" Visible="false"/>
+               <SubItem Type="SubItemLabel" Visible="true"/>
+               <SubItem Type="SubItemPin" Visible="false"/>
+               <SubItem Type="SubItemSourceReference" Visible="false"/>
+               <SubItem Type="SubItemSourceType" Visible="false"/>
+               <SubItem Type="SubItemDateTime" Visible="false"/>
+            </SubItemCollection>
+         </CIStyle>
+      </ChartItem>
+      <ChartItem DateSet="false" GradeOneIndex="0" Description="This is a description with wrapping " GradeTwoIndex="0" Selected="false" GradeThreeIndex="0" TimeSet="false" Ordered="false" Label="This is a link label" Shown="true" XPosition="0">
+         <Link End1Id="3" End2Id="2" LabelPos="50" LabelSegment="0" Offset="0">
+            <LinkStyle ArrowStyle="ArrowNone" LineWidth="3" Strength="Tentative" Type="Car"/>
+         </Link>
+         <CIStyle Background="false" DateTimeFormat="Default" ShowDateTimeDescription="false" UseSubTextWidth="true" SubTextWidth="1.968503937007874">
+            <Font BackColour="16777215" FontColour="0" CharSet="CharSetANSI" FaceName="Tahoma" PointSize="11" Bold="false" Italic="false" Underline="false" Strikeout="false"/>
+            <SubItemCollection>
+               <SubItem Type="SubItemDescription" Visible="true"/>
+               <SubItem Type="SubItemGrades" Visible="false"/>
+               <SubItem Type="SubItemLabel" Visible="true"/>
+               <SubItem Type="SubItemPin" Visible="false"/>
+               <SubItem Type="SubItemSourceReference" Visible="false"/>
+               <SubItem Type="SubItemSourceType" Visible="false"/>
+               <SubItem Type="SubItemDateTime" Visible="false"/>
+            </SubItemCollection>
+         </CIStyle>
+      </ChartItem>
+      <ChartItem DateSet="false" GradeOneIndex="0" Description="This is a description with wrapping " GradeTwoIndex="0" Selected="false" GradeThreeIndex="0" TimeSet="false" Ordered="false" Label="This is a link label" Shown="true" XPosition="0">
+         <Link End1Id="2" End2Id="4" LabelPos="50" LabelSegment="0" Offset="0">
+            <LinkStyle ArrowStyle="ArrowOnHead" LineWidth="5" Strength="Confirmed" Type="Fly"/>
+         </Link>
+         <CIStyle Background="false" DateTimeFormat="Default" ShowDateTimeDescription="false" UseSubTextWidth="true" SubTextWidth="1.968503937007874">
+            <Font BackColour="16777215" FontColour="0" CharSet="CharSetANSI" FaceName="Tahoma" PointSize="11" Bold="false" Italic="false" Underline="false" Strikeout="false"/>
+            <SubItemCollection>
+               <SubItem Type="SubItemDescription" Visible="false"/>
+               <SubItem Type="SubItemGrades" Visible="false"/>
+               <SubItem Type="SubItemLabel" Visible="true"/>
+               <SubItem Type="SubItemPin" Visible="false"/>
+               <SubItem Type="SubItemSourceReference" Visible="false"/>
+               <SubItem Type="SubItemSourceType" Visible="false"/>
+               <SubItem Type="SubItemDateTime" Visible="false"/>
+            </SubItemCollection>
+         </CIStyle>
+      </ChartItem>
+   </ChartItemCollection>
+</Chart>
